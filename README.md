@@ -1,10 +1,9 @@
+
 # 🎬 Netflix Clone – React + Vite + TMDb API
 
 A simple and clean Netflix-inspired homepage built with **React**, **Vite**, and **CSS**. It includes a language toggle (English/Hindi), leverages the **TMDb API** for dynamic content, and is fully responsive. Perfect for practicing component structure, accessibility, and deployment via **Vercel**.
 
 > ⚠️ Note: This is just a UI clone. It doesn't support video playback or user authentication.
-
----
 
 ---
 
@@ -61,8 +60,6 @@ src/
 
 ---
 
----
-
 ## 🛠 Getting Started
 
 ### Requirements
@@ -100,7 +97,7 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 Example from `TrendingSlider.jsx`:
 
 ```js
-const API_URL = \`https://api.themoviedb.org/3/trending/movie/week?api_key=\${import.meta.env.VITE_TMDB_API_KEY}\`;
+const API_URL = `https://api.themoviedb.org/3/trending/movie/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}`;
 ```
 
 5. **Start dev server**
@@ -147,8 +144,6 @@ Want to add more languages? Just create a new JSON file and update `i18n.js`.
 - Images fetched in `w500` sizes
 - Uses semantic HTML, lazy CSS, minimal JS
 - Accessibility: labels, ARIA, keyboard nav
-
----
 
 ---
 
