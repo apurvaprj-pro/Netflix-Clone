@@ -3,16 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 34px;
-  padding-right: 250px;
-  margin-left: 8%;
+  padding: 0 5%;
   height: 90px;
   color: white;
 }
 
 .navbar .logo {
   width: 150px;
-  margin-right: 0px;
 }
 
 .language-selector {
@@ -30,9 +27,11 @@
   border: 1px solid #ccc;
   color: white;
   border-radius: 4px;
+  font-size: 14px;
 }
 
-.language-changer .lang-icon {
+.language-changer .lang-icon,
+.lang-dropdown .lang-icon {
   width: 20px;
   height: 20px;
 }
@@ -75,12 +74,6 @@
   color: white;
 }
 
-.lang-dropdown .lang-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
 .sign-in-btn {
   background-color: #e50914;
   color: white;
@@ -88,7 +81,6 @@
   border-radius: 4px;
   font-weight: bold;
   font-size: 14px;
-  width: fit-content;
   padding: 5px 20px;
   height: 33px;
   cursor: pointer;
@@ -99,43 +91,52 @@
   background-color: #b20710;
 }
 
+/* ---------- Responsive Breakpoints ---------- */
+
 @media (max-width: 768px) {
   .navbar {
-    padding-right: 150px;
+    padding: 0 4%;
   }
+
   .navbar .logo {
     width: 130px;
   }
-}
 
-@media (max-width: 605px) {
-  .navbar {
-    padding-right: 100px;
+  .sign-in-btn {
+    font-size: 13px;
+    padding: 5px 16px;
+    height: 32px;
   }
 }
 
-@media (width > 480px) {
+@media (max-width: 480px) {
   .navbar {
-    padding-right: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+    height: auto;
+    gap: 10px;
   }
 
-  .navbar .logo {
-    width: 110px;
-    margin-right: 50px;
-  }
-
-  .language-changer {
-    font-size: 14px;
-    padding: 4px 8px;
+  .group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
   }
 
   .sign-in-btn {
     width: 100%;
     font-size: 13px;
-    height: 30px;
+    height: 36px;
+  }
+
+  .language-changer {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .arrow-navbar {
-    margin-right: 4px;
+    margin-right: 0;
   }
 }
