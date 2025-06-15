@@ -1,0 +1,70 @@
+.ready-2 {
+  color: #fff;
+  margin-top: 40px;
+  font-size: clamp(14px, 2vw, 18px);
+  text-align: center;
+  padding: 0 10px;
+}
+
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+.email-input {
+  padding: 14px 20px;
+  width: clamp(260px, 50%, 380px);
+  font-size: clamp(15px, 1.8vw, 17px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(18, 21, 27, 0.8);
+  color: #fff;
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: #ffffffa1;
+}
+
+/* Button styling */
+.get-started-btn {
+  padding: clamp(12px, 3vw, 16px) clamp(20px, 6vw, 30px);
+  font-size: clamp(16px, 2vw, 23px);
+  font-weight: bold;
+  color: white;
+  background-color: #e50914;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+.get-started-btn:hover {
+  background-color: #b20710;
+}
+
+.get-started-btn img {
+  width: clamp(14px, 2vw, 20px);
+  height: auto;
+}
+
+@media (max-width: 420px) {
+  .email-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-input,
+  .get-started-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

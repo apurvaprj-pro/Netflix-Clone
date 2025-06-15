@@ -1,0 +1,139 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  padding-right: 250px;
+  margin-left: 8%;
+  height: 90px;
+  color: white;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.language-selector {
+  position: relative;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.language-changer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 4px;
+}
+
+.language-changer .lang-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-navbar {
+  width: 10px;
+  margin-right: 8px;
+}
+
+.group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  z-index: 100;
+  color: black;
+}
+
+.lang-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.lang-dropdown li:hover {
+  background-color: #1967D2;
+  color: white;
+}
+
+.lang-dropdown .lang-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.sign-in-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+  padding: 5px 20px;
+  height: 33px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #b20710;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-right: 150px;
+  }
+  .navbar .logo {
+    width: 130px;
+  }
+}
+
+@media (max-width: 605px) {
+  .navbar {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding-right: 60px;
+  }
+
+  .navbar .logo {
+    width: 110px;
+  }
+
+  .language-changer {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .sign-in-btn {
+    width: 100%;
+    font-size: 13px;
+    height: 30px;
+  }
+
+  .arrow-navbar {
+    margin-right: 4px;
+  }
+}

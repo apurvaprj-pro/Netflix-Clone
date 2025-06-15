@@ -1,0 +1,147 @@
+.slider-wrapper {
+  position: relative;
+  padding: 60px 20px;
+  background-color: black;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.slider-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 30px;
+  padding: 10px 0;
+  padding-left: 40px;
+  scroll-padding-left: 40px;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-item {
+  flex: 0 0 calc(25% - 12px);
+  position: relative;
+}
+
+.slider-poster {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.slider-rank {
+  position: absolute;
+  bottom: 10px;
+  left: -25px;
+  font-size: 102px;
+  font-weight: 700;
+  z-index: 100;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  width: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #2b2b2b;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow i {
+  display: block;
+  font-style: normal;
+}
+
+/* ------------------------
+   Responsive Adjustments
+------------------------ */
+@media (max-width: 1024px) {
+  .slider-item {
+    flex: 0 0 calc(33.33% - 10px); /* 3 per row */
+  }
+
+  .slider-rank {
+    font-size: 80px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 0 0 calc(50% - 10px); /* 2 per row */
+  }
+
+  .slider-rank {
+    font-size: 60px;
+    left: -16px;
+  }
+
+  .arrow {
+    width: 25px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-item {
+    flex: 0 0 100%; /* 1 per row */
+  }
+
+  .slider-rank {
+    font-size: 48px;
+    left: -10px;
+  }
+
+  .arrow {
+    display: none; 
+  }
+
+  .slider-wrapper {
+    padding: 40px 10px;
+    width: 100%;
+  }
+
+  .slider-title {
+    font-size: 20px;
+  }
+}
