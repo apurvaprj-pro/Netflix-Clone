@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './TrendingSlider.css';
 import { useTranslation } from 'react-i18next';
 
-const API_URL = "https://api.themoviedb.org/3/trending/movie/week?api_key=5c93f6be8235dc3533f26b98778e9ff6";
+const API_URL = `https://api.themoviedb.org/3/trending/movie/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}`;
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
 const TrendingSlider = () => {
