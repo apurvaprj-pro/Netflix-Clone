@@ -5,20 +5,6 @@ A simple and clean Netflix-inspired homepage built with **React**, **Vite**, and
 
 > ⚠️ Note: This is just a UI clone. It doesn't support video playback or user authentication.
 
----
-
-## 📸 Preview
-
-```bash
-./screenshots/homepage.png
-```
-
-```md
-![Homepage](./screenshots/homepage.png)
-```
-
----
-
 ## ✨ Features
 
 - 🎞 Trending movies from TMDb
