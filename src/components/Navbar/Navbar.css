@@ -113,13 +113,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width > 480px) {
   .navbar {
     padding-right: 60px;
   }
 
   .navbar .logo {
     width: 110px;
+    margin-right: 50px;
   }
 
   .language-changer {
